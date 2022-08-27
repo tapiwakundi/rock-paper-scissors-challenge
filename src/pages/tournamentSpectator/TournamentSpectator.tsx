@@ -9,6 +9,8 @@ export const TournamentSpectator = () => {
 
     return <main className={styles.mainConatiner}>
         <h1>Spectator</h1>
-        <WinsGraphPercentages />
+        <div className={styles.graphContainer}>
+            <WinsGraphPercentages stats={Object.entries(stats)} />
+        </div>
     </main>
 }

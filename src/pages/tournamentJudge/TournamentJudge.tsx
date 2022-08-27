@@ -1,8 +1,6 @@
-import React from 'react'
 import { useGameStats } from '@game-app/hooks'
 import { calculateNumWins } from '@game-app/utils'
 import { WinsGraph } from '@game-app/components'
-import styles from './index.module.css'
 import { Layout } from '@game-app/layouts'
 import ReactLoading from 'react-loading'
 
@@ -12,7 +10,6 @@ export const TournamentJudge = () => {
 
     if (loading) {
         return <ReactLoading type="spinningBubbles" color="#fff" />
-
     }
 
     return <Layout>
