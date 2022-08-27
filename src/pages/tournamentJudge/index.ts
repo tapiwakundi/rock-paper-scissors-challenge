@@ -1,0 +1,1 @@
+export { TournamentJudge } from './TournamentJudge'
