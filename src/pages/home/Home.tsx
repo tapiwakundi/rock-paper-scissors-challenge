@@ -32,6 +32,12 @@ export const Home = () => {
             })}
         </div>
 
-        <a href="https://github.com/tapiwakundi/rock-paper-scissors-challenge" className={styles.github}>Source Code</a>
+        <a
+            href="https://github.com/tapiwakundi/rock-paper-scissors-challenge"
+            className={styles.github}
+            target="_blank" rel="noreferrer"
+        >
+            Source Code
+        </a>
     </Layout>
 }
