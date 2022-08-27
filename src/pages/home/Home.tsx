@@ -31,5 +31,7 @@ export const Home = () => {
                 return <SelectionCard item={item} />
             })}
         </div>
+
+        <a href="https://github.com/tapiwakundi/rock-paper-scissors-challenge" className={styles.github}>Source Code</a>
     </Layout>
 }

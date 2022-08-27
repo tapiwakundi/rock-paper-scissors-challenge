@@ -6,3 +6,8 @@
 .selection {
     margin-bottom: 2rem;
 }
+
+.github {
+    position: absolute;
+    bottom: 24px;
+}
