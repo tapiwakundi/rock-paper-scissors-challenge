@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-View live demo [here](http://localhost:3000)
+View live demo [here](https://tiny-beignet-b5ff40.netlify.app/)
 
 ## Available Scripts
 
