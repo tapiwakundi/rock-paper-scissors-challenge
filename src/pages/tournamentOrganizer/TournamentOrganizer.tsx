@@ -14,7 +14,7 @@ export const TournamentOrganizer = () => {
         <h1>Tournament Organizer</h1>
 
         <div className={styles.statsContainer}>
-            <StatCard label='Number of games playess' value={data.length} />
+            <StatCard label='Number of games played' value={data.length} />
         </div>
 
     </Layout>

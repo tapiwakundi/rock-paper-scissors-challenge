@@ -24,6 +24,8 @@ export const Home = () => {
     return <Layout>
         <h1>Welcome</h1>
 
+        <span className={styles.selection}>Please select your role</span>
+
         <div className={styles.cardContainer}>
             {NAVIGATION_DATA.map(item => {
                 return <SelectionCard item={item} />
