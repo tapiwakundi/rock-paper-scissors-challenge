@@ -1,0 +1,1 @@
+export { TournamentSpectator } from './TournamentSpectator'

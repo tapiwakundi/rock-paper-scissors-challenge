@@ -1,8 +1,6 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import { Home, TournamentJudge, TournamentOrganizer } from './pages';
+import { Home, TournamentSpectator, TournamentJudge, TournamentOrganizer } from './pages';
 
 function App() {
   return (
@@ -12,7 +10,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="tournament-organizer" element={<TournamentOrganizer />} />
           <Route path="tournament-judge" element={<TournamentJudge />} />
-
+          <Route path="tournament-spectator" element={<TournamentSpectator />} />
         </Routes>
       </Router>
     </div>

@@ -1,17 +1,25 @@
 import React from 'react'
 import { useGameStats } from '@game-app/hooks'
 import { calculateNumWins } from '@game-app/utils'
+import { WinsGraph } from '@game-app/components'
+import styles from './index.module.css'
+import { Layout } from '@game-app/layouts'
+import ReactLoading from 'react-loading'
 
 export const TournamentJudge = () => {
-    const { data } = useGameStats()
-    const { rockWins, paperWins, scissorsWins } = data && calculateNumWins(data)
+    const { data, loading } = useGameStats()
+    const stats = data && calculateNumWins(data)
 
-    return <div>
-        TournamentGudge
+    if (loading) {
+        return <ReactLoading type="spinningBubbles" color="#fff" />
 
-        <span>{`Rock wins: ${rockWins}`}</span>
-        <span>{`Paper wins: ${paperWins}`}</span>
-        <span>{`Scissors wins: ${scissorsWins}`}</span>
+    }
 
-    </div>
+    return <Layout>
+        <h1>Tournament Judge</h1>
+
+        <WinsGraph stats={Object.entries(stats)} />
+
+    </Layout>
+
 }

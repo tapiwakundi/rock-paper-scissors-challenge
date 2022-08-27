@@ -1,0 +1,28 @@
+.container {
+    background-color: #434343;
+    padding: 24px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    color: white;
+    font-size: 3rem;
+    text-decoration: none;
+    font-weight: 700;
+    margin-bottom: 8px
+}
+a {
+    text-decoration: none;
+}
+
+a:visited{ 
+    color: gray;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }

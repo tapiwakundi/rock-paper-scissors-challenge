@@ -1,0 +1,1 @@
+export { WinsGraphPercentages } from './WinsGraphPercentages';
